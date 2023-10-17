@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionManager.cpp">
+      <Filter>Source\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionPoolBase.cpp">
+      <Filter>Source\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionPoolTCP.cpp">
+      <Filter>Source\Connections</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtocolBase.cpp">
+      <Filter>Source\Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtocolManager.cpp">
+      <Filter>Source\Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtocolTeltonika.cpp">
+      <Filter>Source\Protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceManager.cpp">
+      <Filter>Source\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="DevicePoolBase.cpp">
+      <Filter>Source\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="Device.cpp">
+      <Filter>Source\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>Source\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Value.cpp">
+      <Filter>Source\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Arguments.cpp">
+      <Filter>Source\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerSyslog.cpp">
+      <Filter>Source\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Source\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerFile.cpp">
+      <Filter>Source\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerStdErr.cpp">
+      <Filter>Source\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigManager.cpp">
+      <Filter>Source\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>Source\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketSSL.cpp">
+      <Filter>Source\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="SecurityManager.cpp">
+      <Filter>Source\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandManager.cpp">
+      <Filter>Source\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandPrompt.cpp">
+      <Filter>Source\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="duktape.c">
+      <Filter>Source\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptModuleServer.cpp">
+      <Filter>Source\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptModuleDevice.cpp">
+      <Filter>Source\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptModuleCore.cpp">
+      <Filter>Source\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceRequest.cpp">
+      <Filter>Source\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceFunction.cpp">
+      <Filter>Source\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtocolDualCam.cpp">
+      <Filter>Source\Protocols</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{c977cb72-2ad6-4fff-ba78-959e8f703a4a}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{d58c0210-c5cb-4ed3-9bf9-4513e2926984}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Headers\Utilities">
+      <UniqueIdentifier>{2473d774-3a53-4f42-9c59-a5e8bcc4a918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Connections">
+      <UniqueIdentifier>{019790ad-28ec-4dad-99e1-218fb5f29785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Protocols">
+      <UniqueIdentifier>{0cdc2343-b5ef-4d46-9b57-a806f38d8f63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Connections">
+      <UniqueIdentifier>{e033719e-8575-4afb-93f1-8684005396bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Protocols">
+      <UniqueIdentifier>{4bb75ab6-623a-4cf6-8d81-89255db1ab9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utilities">
+      <UniqueIdentifier>{1ef445ce-ec24-47bb-877d-70cadca8b846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Database">
+      <UniqueIdentifier>{2f255a7c-2c3f-4f3e-8ff6-f51a0d76e5e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Database">
+      <UniqueIdentifier>{5ff8d0b1-4319-46e6-8145-4ae3909fd6e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Security">
+      <UniqueIdentifier>{d5b7f276-0fec-4878-b101-640b6de26955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Security">
+      <UniqueIdentifier>{87abbb34-80ea-468e-abab-37a261976cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Commands">
+      <UniqueIdentifier>{bf1c6ba8-3ccd-440b-a7c6-0b8e7adb1f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Commands">
+      <UniqueIdentifier>{0e50038f-ae11-4e78-a190-24ef1d2f6284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Devices">
+      <UniqueIdentifier>{566eaf63-3d2a-41d4-85fc-ce3ac149491b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Devices">
+      <UniqueIdentifier>{b4c3d345-781c-4cdf-b530-35b2cede8d7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Buffer.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionManager.h">
+      <Filter>Headers\Connections</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionPoolBase.h">
+      <Filter>Headers\Connections</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionPoolTCP.h">
+      <Filter>Headers\Connections</Filter>
+    </ClInclude>
+    <ClInclude Include="IConnectionPool.h">
+      <Filter>Headers\Connections</Filter>
+    </ClInclude>
+    <ClInclude Include="IDevicePool.h">
+      <Filter>Headers\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceManager.h">
+      <Filter>Headers\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="DevicePoolBase.h">
+      <Filter>Headers\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="IProtocol.h">
+      <Filter>Headers\Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="WioTMobility.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtocolBase.h">
+      <Filter>Headers\Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtocolManager.h">
+      <Filter>Headers\Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtocolTeltonika.h">
+      <Filter>Headers\Protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>Headers\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoPtr.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>Headers\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Value.h">
+      <Filter>Headers\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="GPSMessage.h">
+      <Filter>Headers\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Arguments.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerSyslog.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="LibLog.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerFile.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerStdErr.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Externals.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="LibConfig.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigManager.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="deelx.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketSSL.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="SecurityManager.h">
+      <Filter>Headers\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandManager.h">
+      <Filter>Headers\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandPrompt.h">
+      <Filter>Headers\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="duktape.h">
+      <Filter>Headers\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="duk_config.h">
+      <Filter>Headers\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="IScriptModule.h">
+      <Filter>Headers\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptModuleServer.h">
+      <Filter>Headers\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptModuleDevice.h">
+      <Filter>Headers\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptModuleCore.h">
+      <Filter>Headers\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceRequest.h">
+      <Filter>Headers\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceFunction.h">
+      <Filter>Headers\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtocolDualCam.h">
+      <Filter>Headers\Protocols</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mobility.conf" />
+    <None Include="wiot_mobility.service" />
+  </ItemGroup>
+</Project>

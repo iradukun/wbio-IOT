@@ -1,0 +1,20 @@
+[Unit]
+Description=WioT Mobility Daemon
+After=network-online.target
+ 
+[Service]
+Type=simple
+ 
+User=wiot
+Group=wiot
+UMask=007
+ 
+ExecStart=/usr/bin/WioT\ Mobility -config /etc/wiot/mobility.conf -log-file /var/log/wiot/mobility.log -daemon
+ 
+Restart=on-failure
+ 
+# Configures the time to wait before service is stopped forcefully.
+TimeoutStopSec=300
+ 
+[Install]
+WantedBy=multi-user.target
