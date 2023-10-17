@@ -33,6 +33,7 @@ AVFormatContext* ofctx = nullptr;
 AVOutputFormat* oformat = nullptr;
 constexpr int Fps = 30;
 constexpr int Bitrate = 2000;
+using namespace std;
 
 static void pushFrame(const uint8_t* data, const timeval &tv)
 {
@@ -286,6 +287,66 @@ static void free()
 		sws_freeContext(swsCtx);
 		swsCtx = nullptr;
 	}
+}
+
+
+// static void cleanupResources(){
+// if(videoFrame){
+
+// 	av_frame_free(&videoFrame);
+// 	videoFrame=nullptr;
+// }
+// if(cctx){
+// 	avcodec_free_context(&cctx);
+// 	cctx=nullptr;
+// }
+// if(ofctx){
+// 	avformat_free_context(&ofctx);
+// 	ofctx=nullptr;
+// }
+// if (swsCtx) {
+//         sws_freeContext(swsCtx);
+//         swsCtx = nullptr;
+//     }
+
+// }
+
+static void cleanupResources() {
+    enum Resource { VideoFrame, Ctx, OfCtx, SwsCtx };
+    
+    Resource resourceToFree = -1;
+    
+    if (videoFrame) {
+        resourceToFree = VideoFrame;
+    } else if (cctx) {
+        resourceToFree = Ctx;
+    } else if (ofctx) {
+        resourceToFree = OfCtx;
+    } else if (swsCtx) {
+        resourceToFree = SwsCtx;
+    }
+    
+    switch (resourceToFree) {
+        case VideoFrame:
+            av_frame_free(&videoFrame);
+            videoFrame = nullptr;
+            break;
+        case Ctx:
+            avcodec_free_context(&cctx);
+            cctx = nullptr;
+            break;
+        case OfCtx:
+            avformat_free_context(ofctx);
+            ofctx = nullptr;
+            break;
+        case SwsCtx:
+            sws_freeContext(swsCtx);
+            swsCtx = nullptr;
+            break;
+        default:
+            // No resources to free
+            break;
+    }
 }
 
 

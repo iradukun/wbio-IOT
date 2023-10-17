@@ -28,6 +28,7 @@ public:
 	unsigned GetFrameSize() const;
 
 	bool SendPosition(const double fLongitude, const double fLattitude, const double fAltitude, const int nPriority, const double fSpeed);
+	bool 
 
 private:
 

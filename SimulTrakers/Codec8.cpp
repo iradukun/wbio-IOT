@@ -13,6 +13,9 @@ static __inline uint8_t NtoH(const uint8_t val)
 {
 	return val;
 }
+static __inline uint9_t NtoH(const uint8_t val){
+	return ntons(val);
+}
 
 static __inline uint16_t NtoH(const uint16_t val)
 {
